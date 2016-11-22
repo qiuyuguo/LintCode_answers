@@ -15,7 +15,10 @@ public class MinStack {
         if (minStack.peek() >= number)
             minStack.push(number);
     }
-
+    
+    // pop() does not garantee returning min. 
+    // Therefore, the stack pops, while minStack pops only if it happens to be
+    // on the position
     public int pop() {
         if (stack.peek().equals(minStack.peek()) ) 
             minStack.pop();
