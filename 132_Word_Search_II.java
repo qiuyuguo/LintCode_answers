@@ -19,7 +19,7 @@ public class Solution {
  
  
 	class TrieTree{
-		TrieNode root ;
+		TrieNode root ; //root is an empty TrieNode now
 		public TrieTree(TrieNode TrieNode) {
 			root = TrieNode;
 		}
